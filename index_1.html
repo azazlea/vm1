@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>비망우림(備忘雨林)이야기</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/parallax.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="bg-container">
+			<img id="image" src="jpg1.png">
+			<h1 id="text">備忘雨林</h1>
+			<img id="bg" src="img/z-2.png">
+		</div>
+
+
+		<div class="bg-container">
+			<img id="image" src="boy.png">
+			
+			<img id="bg" src="back.png">
+		</div>
+		
+
+		<div class="bg-container">
+			
+			<img src="tt.jpg" onmouseover="this.src='la.jpg'" id="bg" onmouseout="this.src='tt.jpg'">
+		</div>
+		</div>
+	
+
+		<div class="bg-container">
+			
+			<img id="bg" src="tra.png">
+		</div>
+
+
+		<div class="bg-container">
+			<img src="stay.jpg" onmouseover="this.src='eye.jpg'" id="bg" onmouseout="this.src='stay.jpg'">
+			
+		</div>
+
+		<div class="bg-container">
+			
+			<img id="bg" src="train.jpg">
+		</div>
+
+
+
+		<div class="bg-container">
+			
+			<img id="bg" src="foot.jpg">
+		</div>
+
+		<div class="bg-container">
+			
+			<img id="bg" src="start.jpg">
+		</div>
+
+
+
+
+
+		<div class="bg-container">
+			<img id="image" src="green.png">
+			
+			<img id="bg" src="rain.jpg">
+		</div>
+
+		<div class="bg-container">
+			<div>
+			<img src="door.jpg" onmouseover="this.src='door_1.png'" id="bg" onmouseout="this.src='door.jpg'" onclick="index_2.html">
+			</div>
+		
+		</div>
+
+<br>
+<br>
+<br>
+
+	</body>
+
+	<script type="text/javascript">
+		let bg = document.getElementById('bg');
+		let text = document.getElementById('text');
+		let image = document.getElementById('image');
+
+		window.addEventListener('scroll', function(){
+			var value = window.scrollY;
+			bg.style.top = value * 0.25 + 'px';
+			text.style.top = value * 0.15 + 'px';
+		})
+	</script>
+
+</html>
